@@ -14,10 +14,10 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // ЭМПИРИЧЕСКИЕ КАЛИБРОВКИ АЦП (Для расчета шкалы 0-20 см) для шкалы
 const int32_t ADC_EMPTY = 45;   // Пустой бак 50 - проверенно
-const int32_t ADC_FULL  = 100;  // Максимум (перелив) 110 - проверенно
+const int32_t ADC_FULL  = 95;  // Максимум (перелив) 110 - проверенно
 
 // НАСТРОЙКА ПОРОГОВ (С учетом твоих корректировок) для рабатывания
-int32_t Inside_ON_Threshold_ADC  = 98; // Включение откачки
+int32_t Inside_ON_Threshold_ADC  = 90; // Включение откачки
 int32_t Inside_OFF_Threshold_ADC = 47;  // Выключение откачки (опускаем до 50)
 
 // Переменные для фильтра (усреднения)
